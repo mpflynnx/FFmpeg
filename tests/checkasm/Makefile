@@ -1,4 +1,5 @@
 # libavcodec tests
+
 # subsystems
 AVCODECOBJS-$(CONFIG_AC3DSP)            += ac3dsp.o
 AVCODECOBJS-$(CONFIG_AUDIODSP)          += audiodsp.o
@@ -37,6 +38,7 @@ AVCODECOBJS-$(CONFIG_CAVS_DECODER)      += cavsdsp.o
 AVCODECOBJS-$(CONFIG_DCA_DECODER)       += dcadsp.o synth_filter.o
 AVCODECOBJS-$(CONFIG_DIRAC_DECODER)     += diracdsp.o
 AVCODECOBJS-$(CONFIG_EXR_DECODER)       += exrdsp.o
+
 AVCODECOBJS-$(CONFIG_FLAC_DECODER)      += flacdsp.o
 AVCODECOBJS-$(CONFIG_HUFFYUV_DECODER)   += huffyuvdsp.o
 AVCODECOBJS-$(CONFIG_JPEG2000_DECODER)  += jpeg2000dsp.o
@@ -88,6 +90,9 @@ SWSCALEOBJS                             += sw_gbrp.o            \
 
 CHECKASMOBJS-$(CONFIG_SWSCALE)  += $(SWSCALEOBJS)
 
+# mpflynnx example tests
+CHECKASMOBJS += example.o $(CHECKASMOBJS-yes) checkasm.o
+
 # libavutil tests
 AVUTILOBJS                              += aes.o
 AVUTILOBJS                              += av_tx.o
@@ -95,6 +100,8 @@ AVUTILOBJS                              += crc.o
 AVUTILOBJS                              += fixed_dsp.o
 AVUTILOBJS                              += float_dsp.o
 AVUTILOBJS                              += lls.o
+
+
 
 CHECKASMOBJS-$(CONFIG_AVUTIL)  += $(AVUTILOBJS)
 

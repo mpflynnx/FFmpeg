@@ -118,6 +118,7 @@ static const struct {
     /* NOTE: When adding a new test to this list here, it also needs to be
      * added in tests/fate/checkasm.mak, otherwise it doesn't get executed
      * as part of "make fate" or "make fate-checkasm". */
+    { "example", checkasm_check_example },
 #if CONFIG_AVCODEC
     #if CONFIG_AAC_DECODER
         { "aacpsdsp", checkasm_check_aacpsdsp },
@@ -285,6 +286,7 @@ static const struct {
         { "vvc_sao", checkasm_check_vvc_sao },
     #endif
 #endif
+
 #if CONFIG_AVFILTER
     #if CONFIG_SCENE_SAD
         { "scene_sad", checkasm_check_scene_sad },
@@ -1162,6 +1164,8 @@ int checkasm_fail_func(const char *msg, ...)
     }
     return state.verbose;
 }
+
+void checkasm_check_example(void);
 
 void checkasm_set_signal_handler_state(int enabled) {
     state.catch_signals = enabled;

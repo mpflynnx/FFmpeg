@@ -97,6 +97,7 @@ void checkasm_check_crc(void);
 void checkasm_check_dcadsp(void);
 void checkasm_check_diracdsp(void);
 void checkasm_check_exrdsp(void);
+void checkasm_check_example(void);
 void checkasm_check_fdctdsp(void);
 void checkasm_check_fixed_dsp(void);
 void checkasm_check_flacdsp(void);

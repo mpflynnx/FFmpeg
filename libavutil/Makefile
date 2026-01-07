@@ -223,6 +223,9 @@ OBJS-$(!CONFIG_VULKAN)                  += hwcontext_stub.o
 
 OBJS += $(COMPAT_OBJS:%=../compat/%)
 
+# mpflynnx
+X86ASMOBJS += x86/example.o
+
 # Object files to satisfy dependencies of other libraries for static builds
 STLIBOBJS-$(CONFIG_EXR_DECODER)         += half2float.o float2half.o
 STLIBOBJS-$(CONFIG_EXR_ENCODER)         += float2half.o
