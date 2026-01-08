@@ -118,7 +118,6 @@ static const struct {
     /* NOTE: When adding a new test to this list here, it also needs to be
      * added in tests/fate/checkasm.mak, otherwise it doesn't get executed
      * as part of "make fate" or "make fate-checkasm". */
-    // mpflynnx
     { "example", checkasm_check_example },
     { "lesson1", checkasm_check_lesson1 },
 #if CONFIG_AVCODEC
@@ -1167,10 +1166,10 @@ int checkasm_fail_func(const char *msg, ...)
     return state.verbose;
 }
 
-// mpflynnx
-void checkasm_check_example(void);
-void checkasm_check_lesson1(void);
-//
+// // mpflynnx
+// void checkasm_check_example(void); // redundant?
+// void checkasm_check_lesson1(void); // redundant?
+// //
 
 void checkasm_set_signal_handler_state(int enabled) {
     state.catch_signals = enabled;
