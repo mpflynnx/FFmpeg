@@ -90,8 +90,9 @@ SWSCALEOBJS                             += sw_gbrp.o            \
 
 CHECKASMOBJS-$(CONFIG_SWSCALE)  += $(SWSCALEOBJS)
 
-# mpflynnx example tests
+# mpflynnx example and asm-lesssons tests
 CHECKASMOBJS += example.o $(CHECKASMOBJS-yes) checkasm.o
+CHECKASMOBJS += lesson1.o $(CHECKASMOBJS-yes) checkasm.o
 
 # libavutil tests
 AVUTILOBJS                              += aes.o

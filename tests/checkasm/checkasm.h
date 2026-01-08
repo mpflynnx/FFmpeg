@@ -97,7 +97,7 @@ void checkasm_check_crc(void);
 void checkasm_check_dcadsp(void);
 void checkasm_check_diracdsp(void);
 void checkasm_check_exrdsp(void);
-void checkasm_check_example(void);
+void checkasm_check_example(void); // mpflynnx
 void checkasm_check_fdctdsp(void);
 void checkasm_check_fixed_dsp(void);
 void checkasm_check_flacdsp(void);
@@ -119,6 +119,7 @@ void checkasm_check_huffyuvdsp(void);
 void checkasm_check_idctdsp(void);
 void checkasm_check_idet(void);
 void checkasm_check_jpeg2000dsp(void);
+void checkasm_check_lesson1(void); // mpflynnx
 void checkasm_check_llauddsp(void);
 void checkasm_check_lls(void);
 void checkasm_check_llviddsp(void);

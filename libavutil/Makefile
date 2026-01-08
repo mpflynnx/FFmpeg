@@ -225,6 +225,7 @@ OBJS += $(COMPAT_OBJS:%=../compat/%)
 
 # mpflynnx
 X86ASMOBJS += x86/example.o
+X86ASMOBJS += x86/lesson1.o
 
 # Object files to satisfy dependencies of other libraries for static builds
 STLIBOBJS-$(CONFIG_EXR_DECODER)         += half2float.o float2half.o
